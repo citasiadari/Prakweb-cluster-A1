@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Tugas 2 Modul 10 - Cita Sari Marito Siadari</title>
+    <style>
+        main {
+            width: 75%;
+            margin: auto;
+        }
+
+        div {
+            padding: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="id1">Cita Sari Marito  Siadari</div> 
+        <section class="sama">118140172</section>
+        <div class="sama">contoh div kelas</div>
+
+        <!-- Memilih hanya satu node dengan ID -->
+        <button onclick="return ubah(document.getElementById('id1'), 'grey')">Ubah Background Cita Sari Marito Siadari dengan getElementById</button><br>
+
+        <!-- Memilih semua node yang sesuai nama class-nya -->
+        <button onclick="return ubah(document.getElementsByClassName('sama'), 'red')">Ubah Background Cita Sari Marito Siadari sama dengan getElementsByClassName</button><br>
+        
+        <!-- Memilih semua node target sesuai dengan tagName atau atribut kelas-->
+        <button onclick="return ubah(document.getElementsByTagName('section'), 'blue')">Ubah Background 118140172 dengan getElementsByTagName</button><br>
+        
+        <!-- Hanya memilih node target yang pertama  -->
+        <button onclick="return ubah(document.querySelector('div'), 'aqua')">Ubah Background div dengan querySelector</button><br> 
+        
+        <!-- Memilih semua node target, umumnya yang dipilih bisa lebih dari 1 (tag, class, bisa juga id) -->
+        <button onclick="return ubah(document.querySelectorAll('div'), 'green')">Ubah Background div dengan querySelectorAll</button><br>
+    </main>
+
+    <script>
+        function ubah(element, color) {
+            elementLength = element.length;
+            if (elementLength) {
+                for (let x = 0; x < elementLength; x++) {
+                    element[x].style.backgroundColor = color;
+                }
+                return;
+            }
+
+            element.style.backgroundColor = color;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version ="1.0"?>
+<dataDiri>
+    <nama>
+        <awal> Cita Sari Marito </awal>
+        <akhir> Siadari </akhir>
+    </nama>
+
+    <jeniskelamin> Perempuan </jeniskelamin>
+
+    <alamat>
+    <desa> Limau Manis </desa>
+    <kecamatan> Tanjung Morawa </kecamatan>
+    <kabupaten> Deli Serdang </kabupaten>
+    <provinsi> Sumatera Utara </provinsi>
+    </alamat>
+
+    <soialMedia>
+        <instagram>Citasiadari03</instagram>
+        <line>citaj03</line>
+    </soialMedia>
+</dataDiri>
